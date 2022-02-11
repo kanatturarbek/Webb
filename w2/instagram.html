@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Instagram</title>
+    <style>
+        body{
+            background-color: rgb(250, 250, 250);
+            font-family: sans-serif;
+        }
+    .image{
+        position: absolute;
+        left: 24%;
+        top:7%;
+    }
+    .frm{
+        position:absolute ;
+        background-color: rgb(255, 255, 255);
+        width:343px;
+        height: 400px;
+        left:51%;
+        top: 9%;
+        margin: 10px;
+        border: 1px solid rgb(214, 214, 214);
+        border-radius: 2px;
+
+    }
+    .logo{
+        margin-top: 20px;
+        margin-left: 85px;
+        margin-bottom: 30px;
+    }
+    .dft{
+        margin: 40px;
+        margin-bottom: 5px;
+        margin-top: 1px;
+        padding: 10px;
+        padding-left:7px ;
+        width: 73%;
+        background-color: #ffff;
+        outline: none;
+        border: 1px solid rgb(184, 184, 184);
+        font-size: 12px; 
+        background-color:rgb(255, 251, 251) ;
+        border-radius: 3px;
+    }
+    .btn{
+        margin: 40px;
+        margin-bottom:7px ;
+        margin-top: 12px;
+        padding: 8px;
+        width: 78%;
+        border-radius: 5px;
+        background-color: rgb(24,119, 242) ;
+        color:white;
+        border: none;
+        font-size: 13px ;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color:rgb(255, 255, 255) ;
+        color:rgb(24,119, 242);
+        border : 1px solid rgb(24,119, 242);
+    }
+
+        .separator { 
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size:17px ;
+        color: rgb(184, 184, 184);
+    }
+
+    .separator .line {
+     height: 1px;
+     width: 40%;
+    background-color: rgb(218, 212, 212);
+    }
+    .frfpsrd{
+    
+      text-align: center;
+      margin: 5px;
+      border: none;
+
+    }
+    #fb{
+        margin: 10px;
+        font-size: 13px;
+        color: rgb(24,119, 242);
+    }
+    .logfb{
+        text-decoration: none;
+    }
+
+    .link{
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .psw{
+        text-align: center;
+        margin: 20px;
+    }
+    #regg{
+        position:absolute ;
+        background-color: rgb(255, 255, 255);
+        width:343px;
+        height:30px;
+        left:51%;
+        top: 64%;
+        text-align: center;
+        margin: 10px;
+        padding-top: 15px;
+        border: 1px solid rgb(214, 214, 214);
+        border-radius: 2px;
+        font-size: 13px;
+        }
+    #lnk{
+        text-decoration: none;
+        color: rgb(24,119, 242);
+    }   
+
+    #dwl{
+        position: absolute;
+        left:58%;
+        top:74%;
+        font-size: 13px;
+    }
+    #iphone{
+        position: absolute;
+        left:54%;
+        top:79%;
+    }
+    #andr{
+        position: absolute;
+        left:63%;
+        top:79%;
+    }
+
+
+        </style>
+</head>
+
+
+
+<body>
+    <img class="image" src="2022-02-11 (2).png" alt="Instagram Login page" height="600px" width="400px">
+    
+
+    <form class="frm" >
+        <img class="logo" src="logo.png" alt="logo" width="170px" ><br>
+        <input type="text" placeholder="Телефон,имя пользователя или эл. адрес" class="dft"><br>
+        <input type="password" placeholder="Пароль" class="dft"><br>
+        <input type="submit" value="Войти" class="btn"><br>
+       
+        <div class="separator">
+            <div class="line"></div>
+            <p>или</p>
+            <div class="line"></div>
+        </div>
+
+        <div class="frfpsrd">
+            <a href="" class="logfb"><img class="icon" src="https://www.facebook.com/images/fb_icon_325x325.png" height="13px"><span id="fb">Войти через Facebook</span></a><br>
+        </div>  
+           <div class="psw">
+            <a href="" class="link">Забыли пароль?</a>
+        </div>
+        </form>
+
+        <div id="reg">
+        <p id="regg">У вас ещё нет аккаунта? <a id="lnk" href="" class="ref">Зарегистрироваться</a></p>
+        </div>
+
+        <p id="dwl">Установите приложение.</p>
+          
+        <a href="" id="iphone"> <img src="http://cmd-couplings.com/wp-content/uploads/%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%B8%D1%82%D0%B5_App_Store.png" alt="appstore" height="50px"> </a>
+        <a href="" id="andr"> <img src="https://travel24.online/wp-content/uploads/2020/04/google-play-travel24.png" alt="googleplay" height="50px"> </a>
+</body>
+</html>

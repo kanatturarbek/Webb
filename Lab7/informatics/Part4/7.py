@@ -1,4 +1,4 @@
 n=int(input())
 l=input().split()
-l=l.reverse()
+l.reverse()
 print(*l) 

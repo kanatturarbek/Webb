@@ -1,4 +1,3 @@
-
 from django.http import JsonResponse
 from api.models import Product,Category
 
@@ -33,9 +32,20 @@ def category_detail(request,category_id):
         return JsonResponse({'message':str(e)},status=400)
     return JsonResponse(category.to_js())
 
+# def category_products(request,category_id):
+#     try:
+#         category=Product.objects.get(id=category_id)
+#     except Product.DoesNotExist as e:
+#         return JsonResponse({'message':str(e)},status=400)
+#     return JsonResponse(category.to_json())
+
+
+
+
 def category_products(request,category_id):
     try:
-        category=Product.objects.get(id=category_id)
+        products=Product.objects.all().filter(category_id_id_id=category_id)
     except Product.DoesNotExist as e:
         return JsonResponse({'message':str(e)},status=400)
-    return JsonResponse(category.to_json())
+    products_json= [product.to_json() for product in products]
+    return JsonResponse(products_json,safe=False)
